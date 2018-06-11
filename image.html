@@ -35,10 +35,10 @@
             <div class="clear"></div>
         </header>
         <nav>
-            <a href="index.html" title="Accueil" class="active">Accueil</a>
+            <a href="index.html" title="Accueil">Accueil</a>
             <a href="texte.html" title="Texte">Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
-            <a href="image.html" title="Image">Image</a>
+            <a href="image.html" title="Image" class="active">Image</a>
             <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
             <a href="tableau.html" title="Tableau">Tableau</a>
@@ -49,61 +49,26 @@
             <a href="animation.html" title="Animation">Animation</a>
         </nav>
         <main> <!-- contenu principal -->
-            <aside> <!-- contenu secondaire -->
-                de côté
-            </aside>
-            <section> <!-- zone de contenu regroupement thématique, texte, titres, etc. -->
-                <div>
-                    <h2>Ici un titre 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis doloribus suscipit nesciunt culpa deserunt explicabo ut dolor ipsa enim consectetur, fugit, aliquid dignissimos amet nam pariatur veritatis voluptas magnam.</p>
-                    <!-- zone supplémentaire de contenu div -->
-                </div>
-                <span>
-                    <h3>Ici un titre 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quia perferendis, error cumque est ullam optio eum, facere voluptatem repellendus, minima ipsam voluptatibus omnis? Dicta et veritatis nemo odio praesentium!</p>
-                    <!-- zone supplémentaire de contenu span -->
-                </span>
-                <article>
-                    <h4>Ici un titre 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum corrupti maxime? Aperiam accusantium voluptate adipisci temporibus quam eligendi tenetur iste, voluptatum mollitia asperiores, recusandae quaerat repudiandae ad, maxime sunt.</p>
-                    <!-- zone supplémentaire de contenu article -->
-                </article>
+            <section class="imageFond"> <!-- zone de contenu regroupement thématique, texte, titres, etc. -->
+               <h3>Une image de fond en css</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ad alias sequi, ut amet, earum temporibus voluptatum delectus quibusdam minima! Accusamus dolorem doloremque, quae illo dolore eius ipsum aliquam?</p> 
             </section>
 
+            <section>
+                <h3>Image dans le HTML</h3>
+                <img src="img/toureiffel.jpg" alt="la tour eiffel" title="une belle image de la tour Eiffel">
 
+            </section>
+
+            <section class="aucentre">
+                <h3>Image dans le HTML avec des effets CSS</h3>
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gates" class="imagegolden">
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gates" class="imagegolden">
+                <blockquote>E pure si muove</blockquote>
+                <img src="img/image.jpg" alt="San Francisco : le Golden Gate" title="Le Golden Gates" class="imagegolden rotation360">
+            </section>
         </main> <!-- fin  main -->
         <footer>
-            <div class="trente">
-                <nav>
-                    <ul>
-                        <li>Accueil</li>
-                        <li>Texte</li>
-                        <li>Sélecteur</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="trente">
-                <nav>
-                    <ul>
-                        <li>Image</li>
-                        <li>Position</li>
-                        <li>Zoning</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="trente">
-                <nav>
-                    <ul>
-                        <li>Tableau</li>
-                        <li>Liste</li>
-                        <li>Lien</li>
-                        <li>Formulaire</li>
-                        <li>Multimédia</li>
-                        <li>Animation</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="dix"></div>
             <!-- pied de page -->
         </footer>
 </body>
