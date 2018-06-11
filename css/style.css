@@ -190,7 +190,7 @@ section {
 }
 
 footer {
-    height: 100px;
+    height: 200px;
     background: #2980b9;
 }
 
@@ -379,10 +379,22 @@ img[src="img/toureiffel.jpg"] { /* on ne cible que cette image là */
     color: #105; 
 
 }
-.dix {
+/* .dix {
     font-size: 22px;
     width: 10%;
     background: red;
     padding: 20px;
     color: #6acafc;
+} */
+
+footer div {
+    width: 25%;
+    height: 100%;
+    float: left;
 }
+
+footer ul li {
+    text-decoration: none;
+}
+
+
