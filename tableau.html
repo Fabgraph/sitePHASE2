@@ -13,7 +13,7 @@
     <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours  -->
     <meta name="keywords" content="HTML, CSS, fabrice domoison, lepoles, pantin">
     <!-- l'auteur de la page -->
-    <title>Site PHASE 2 - texte</title>
+    <title>Site PHASE 2 - tableau</title>
     <!-- ma feuille de style -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -36,12 +36,12 @@
         </header>
         <nav>
             <a href="index.html" title="Accueil">Accueil</a>
-            <a href="texte.html" title="Texte"  class="active">Texte</a>
+            <a href="texte.html" title="Texte">Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
             <a href="image.html" title="Image">Image</a>
             <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
-            <a href="tableau.html" title="Tableau">Tableau</a>
+            <a href="tableau.html" title="Tableau" class="active">Tableau</a>
             <a href="liste.html" title="Liste">Liste</a>
             <a href="lien_menu.html" title="Lien">Lien</a>
             <a href="formulaire.html" title="Formulaire">Formulaire</a>
@@ -49,29 +49,57 @@
             <a href="animation.html" title="Animation">Animation</a>
         </nav>
         <main> <!-- contenu principal -->
-            <section> <!-- zone de contenu regroupement thématique, texte, titres, etc. -->
-                <div>
-                    <h2>Titre de la prmière section</h2>
-                    <blockquote><i class="fas fa-quote-left"></i>Ne nous énervons pas il n'y aura aucun survivant<i class="fas fa-quote-right"></i></blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis doloribus suscipit nesciunt culpa deserunt explicabo ut dolor ipsa enim consectetur, fugit, aliquid dignissimos amet nam pariatur veritatis voluptas magnam.</p>
-                    <!-- zone supplémentaire de contenu div -->
-                </div>
-                <span>
-                    <h3>Ici un titre 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quia perferendis, error cumque est ullam optio eum, facere voluptatem repellendus, minima ipsam voluptatibus omnis? Dicta et veritatis nemo odio praesentium!</p>
-                    <blockquote><i class="fas fa-quote-left position1"></i>J'y suis, j'y reste<i class="fas fa-quote-right position2"></i></blockquote>
-                    <!-- zone supplémentaire de contenu span -->
-                </span>
-                <article>
-                    <h4>Ici un titre 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum corrupti maxime? Aperiam accusantium voluptate adipisci temporibus quam eligendi tenetur iste, voluptatum mollitia asperiores, recusandae quaerat repudiandae ad, maxime sunt.</p>
-                    <!-- zone supplémentaire de contenu article -->
-                </article>
-            </section>
+           <h2>Un tableau</h2>
+           <section class="tableau">
+               <table>
+                   <!-- la légende du tableau -->
+                   <caption><i class="fas fa-plane"></i>Vols /// Paris destination Rome</caption>
+                   <thead>
+                       <tr>
+                           <td>Dates</td>
+                           <td>02/08/2017</td>
+                           <td>03/08/2017</td>
+                           <td>05/08/2017</td>
+                       </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Dates</td>
+                            <td>02/08/2017</td>
+                            <td>03/08/2017</td>
+                            <td>05/08/2017</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Air France</td>
+                            <td>Départ 10 h - Arrivé 13 h</td>
+                            <td>Départ 15 h - Arrivé 18 h</td>
+                            <td>Départ 17 h - Arrivé 20 h</td>
+                        </tr>
+                        <tr>
+                            <td>200 €</td>
+                            <td>180 €</td>
+                            <td>170 €</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Alitalia</td>
+                            <td>Départ 6 h - Arrivé 9 h</td>
+                            <td>Départ 13 h - Arrivé 16 h</td>
+                            <td>Départ 21 h - Arrivé 00 h</td>
+                        </tr>
+                        <tr>
+                            <td>150 €</td>
+                            <td>160 €</td>
+                            <td>150 €</td>
+                        </tr>
+                    </tbody>
+               </table>
 
-
+           </section>
         </main> <!-- fin  main -->
         <footer>
+            
             <!-- pied de page -->
         </footer>
 </body>
