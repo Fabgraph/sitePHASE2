@@ -180,7 +180,7 @@ main {
 }
 
 aside {
-    height: 250px;
+    height: 392px;
     background: #a6d6c3;
 }
 
@@ -476,6 +476,19 @@ footer div nav ul li {
 }
 
 /* page avec les zoning */
+
+/* pour le aside d'accueil */
+
+#zoning0 aside {
+    float: left;
+    width: 20%;
+    height: 467px;
+    margin-right: 10px;
+}
+
+#zoning0 section {
+    width: 80%;
+}
 
 /* zoning 1 */
 
@@ -1094,6 +1107,9 @@ iframe[allowfullscreen] {
 
 /* rotation d'un menu en css 3 */
 
+.btnRot {
+    padding-bottom: 23px;
+}
 #menuRotate {
     height: 360px;
     width: 576px;
@@ -1174,5 +1190,25 @@ iframe[allowfullscreen] {
 #menuRotate dl:hover {
     transform: rotate(-180deg);
     animation: bounceIn 0.7s ease-in-out;
+}
+
+/* La règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. */
+
+@keyframes bounceIn {
+    from {transform: rotate(0deg);}/* de là... from c'est 0% */
+    75% {transform: rotate(-200deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);}/* ...à là. to c'est 100%*/
 
 }
+
+@keyframes bounceOut {
+    from {transform: rotate(0deg);}
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);}
+
+}
+
+
+/* fin */
