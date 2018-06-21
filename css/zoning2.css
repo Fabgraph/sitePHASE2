@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* fin du reset */
+
+body {
+    background: url("../img/motif.png");
+    margin: 0 auto; /* pour centrer le contenu */
+    width: 1200px; /* pour que les enfants du body donc le header fassent la taille de 1200px */
+}
+
+#main {
+    margin-top: 10px;
+}
+
+#main header {
+    background: url("../img/HTB1KTDWMVXXXXb1XXXXq6xXFXXXE.jpg") no-repeat;
+    height: 150px;
+    text-align: center; /* pour centrer le texte */
+}
+
+
+#main aside.gauche {
+    background: lightgreen;
+    width: 200px;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+
+#main section {
+    width: 800px;
+    background: lightskyblue;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+
+#main aside.droite {
+    background: lightgreen;
+    width: 200px;
+    height: 600px;
+    float: right;
+    text-align: center;
+}
+
+#main footer {
+    background: yellowgreen;
+    height: 150px;
+    text-align: center; 
+}
+
+.clear {
+    clear: both;
+} /* pour rétablir le flux */

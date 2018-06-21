@@ -89,3 +89,22 @@ mark{
 .test:hover .cache{
     display: block;
 }
+
+/* feuille de style pour la deuxième partie afin qu'apparaisse les définitions au passage de la souris */
+
+.cache2{
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    border: 1 px solid #f0e9fd;
+    width: 1000px;
+    height: 100px;
+    background: #f1fcde;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.test2:hover .cache2 {
+    display: block;
+}

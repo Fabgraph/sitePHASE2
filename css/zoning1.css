@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+    background: lightpink;
+    margin: 0 auto; /* pour centrer le contenu */
+    width: 1200px; /* pour que les enfants du body donc le header fassent la taille de 1200px */
+}
+
+#main header {
+    background: blanchedalmond;
+    height: 150px;
+    text-align: center; /* pour centrer le texte */
+}
+
+
+#main aside {
+    background: lightgreen;
+    width: 200px;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+
+#main section {
+    width: 1000px;
+    background: lightgrey;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+.clear {
+    clear: both;
+} /* pour rétablir le flux */
