@@ -52,71 +52,65 @@ table {
 }
 
 /* fin du reset */
-
-#container {
-    background: greenyellow;
-    width: 1200px;
-    margin: auto;
-}
-
-header {
-    height: 150px;
-}
-
-nav {
-    height: 100px;
-    background: blue;
-}
-
-.section {
-    background: pink;
+body {
     height: auto;
+    background: pink;
 }
 
-.image { 
-    float: left;
-    padding: 30px 10px 30px 10px;
-}
-
-figcaption {
-    text-align: center;
+.navbar {
+    background: lightblue;
+    position: fixed; /* le menu est fixé en haut de page */
+    top: 0;/* tout en haut de page */
+    left: 0; /* tout à gauche */
     width: 100%;
-    background: #000;
-    opacity: 0.7;
-    color: white;
-    position: relative;
-    bottom: 20px;
+    height: 60px;
 }
 
-.bloc {
-    margin-left: 20%;
-
+.navbar a {
+    color: purple;
+    text-align: center;
+    display: block;
+    float: right;
+    padding: 20px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.imge figure img {
-    overflow: hidden;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    transform: scale(1);
-    -moz-transition: scale(1);
-    -webkit-transform: sacle(1);
-    -o-transform: scale(1);
+.navbar a:hover {
+    color: pink;
+    background: rgba(40, 72, 253, 0.678);
 }
 
-.image figure img:hover, .image figure img:focus {
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: sacle(1.1);
-    -o-transform: scale(1.1);
+.logo {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-footer {
- height: 80px;
+.logo a {
+    color: purple;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#main {
+    width: 80%;
+    height: 600px;
+    background: lightseagreen;
+    margin: auto;
 }
 
 .clear {
     clear: both;
+}
+
+.footer {
+    background: lightblue;
+    position: fixed; /* le menu est fixé en haut de page */
+    bottom: 0;/* tout en bas de page */
+    left: 0; /* tout à gauche */
+    width: 100%;
+    height: 60px;
+    text-align: center;
 }
