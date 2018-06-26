@@ -17,34 +17,80 @@
         <a href="#zonerouge">Zone rouge</a>
                 
     </div> 
-    <div id="main">
+    <div id="main"><!-- div id main -->
+        <header>
+            HEADER
+        </header>
         
         <!-- SECTION -->
         <section class="section">
 
                 
-                    <div class="zoneo">
-                        <h2 class="titrezoneo" >Titre de la zone orange</h2>
+                    <div class="zoneo"><!-- div zone orange -->
+                        <h2 class="titrezone" >Titre de la zone orange</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum esse dolore quod consectetur aut at quisquam obcaecati assumenda nemo iure eos minus, vel doloremque hic recusandae velit architecto saepe.</p>
-                        <hr>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda obcaecati animi sapiente cumque ex id ad mollitia? Dolorum, consectetur perferendis. Quis provident commodi tenetur, possimus nam voluptas nulla ad!</p>
-                    </div>
-                    <div class="zonev">
-                            <h2 class="titrezonev" >Titre de la zone violette</h2>
-                            <figure>
+                    </div><!-- fin div zone orange -->
+                    
+                    <div class="zonev"><!-- div zone violette -->
+                            <h2 class="titrezone">Titre de la zone violette</h2>
+                            <figure class="image1">
                                     <img src="img/philharmonie01.png" alt="logo">
                                     <figcaption>Legende</figcaption>
                 
                             </figure>
-                    </div>
-                    <div class="zoner">
-                            <h2 class="titrezoner" >Titre de la zone rouge</h2>
-                    </div>
+                            <!-- début du formulaire -->
+                            <section class="formulaire">
+
+                                <!-- method ; manière de faire circuler les données (POST ou GET) -->
+                                <!-- action ; url de destination -->
+                                <!-- enctype ; pour envoyer le fichier correctement -->
+                                <form method="POST" action="inscription.php" enctype="multipart/form-data">
+                                    <label for="pseudo">Pseudo</label>
+                                    <input type="text" id="pseudo" name="pseudo" required><br>
+                    
+                                    <label for="prenom">Prénom</label>
+                                    <input type="text" id="prenom" name="prenom" required><br>
+                    
+                                    <label for="password">Mot de passe</label>
+                                    <input type="password" id="password" name="password"><br>
+                    
+                                    <label for="email">Courriel</label>
+                                    <input type="email" id="email" name="email"><br>
+
+                                    <p>Etes-vous un abonné ?</p>
+                                    <!-- (label+input)*3 -->
+                                    <label for="oui">Oui</label>
+                                    <input type="checkbox" id="oui" value="oui" checked>
+                                    <label for="non">Non</label>
+                                    <input type="checkbox" id="non" value="non">
+                                </form>
+                            </section>
+                            <!-- fin du formulaire -->
+                    </div><!-- fin div zone violette -->
+                    
+                    <div class="zoner"><!-- div zone rouge -->
+                            <h2 class="titrezone">Titre de la zone rouge</h2>
+                            <div class="image">
+                                <figure class="image2">
+                                    <img src="img/zoning.jpg" alt="zoning">
+                                    <figcaption>Legende</figcaption>
                 
+                                </figure>
+                                
+                            </div>
+                            
+                            <div class="texte">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magni, alias numquam itaque inventore dicta ipsa veritatis voluptates deleniti amet, quae voluptatem non libero iste dolores, repellendus nulla fugiat eligendi!</p>
+                            </div>
+                            <div class="clear"></div>
+                    </div><!-- fin div zone rouge -->
+                    
+                    </div>
             <!-- retour dans le flux -->
             <div class="clear"></div>
         </section>
-    </div>     
+    </div> <!-- fin de la div id main -->    
     <div class="footer">
         <footer>fin 2018</footer>
             
